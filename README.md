@@ -26,48 +26,47 @@ Options prises en charge
 
 Exemples d'utilisation
 
-    Créez et basculez automatiquement vers une nouvelle branche :
+Créez et basculez automatiquement vers une nouvelle branche :
 
 
-./gitbranch.sh cc ma-nouvelle-branche
+    ./gitbranch.sh cc ma-nouvelle-branche
 
-    Supprimez une branche locale :
+Supprimez une branche locale :
 
-./gitbranch.sh d ma-branche-a-supprimer
+    ./gitbranch.sh d ma-branche-a-supprimer
 
-    Supprimez une branche locale et distante :
-
-
-./gitbranch.sh dr ma-branche-a-supprimer
-
-    Passez à une branche spécifique :
+Supprimez une branche locale et distante :
 
 
-./gitbranch.sh chck ma-branche-cible
+    ./gitbranch.sh dr ma-branche-a-supprimer
 
-    Fusionnez une branche dans la branche actuelle :
-
-
-./gitbranch.sh m ma-branche-a-fusionner
-
-    Passez à une branche spécifique, puis fusionnez une autre branche :
+Passez à une branche spécifique :
 
 
-./gitbranch.sh chckm ma-branche-cible ma-branche-a-fusionner
+    ./gitbranch.sh chck ma-branche-cible
 
-    Passez à une branche spécifique, fusionnez une autre branche, puis supprimez la branche fusionnée localement :
-
-
-./gitbranch.sh chckmd ma-branche-cible ma-branche-a-fusionner
-
-    Passez à une branche spécifique, fusionnez une autre branche, supprimez la branche fusionnée localement et la supprimez à distance :
+Fusionnez une branche dans la branche actuelle :
 
 
-./gitbranch.sh chckmdr ma-branche-cible ma-branche-a-fusionner
+    ./gitbranch.sh m ma-branche-a-fusionner
+
+Passez à une branche spécifique, puis fusionnez une autre branche :
+
+
+    ./gitbranch.sh chckm ma-branche-cible ma-branche-a-fusionner
+
+Passez à une branche spécifique, fusionnez une autre branche, puis supprimez la branche fusionnée localement :
+
+
+    ./gitbranch.sh chckmd ma-branche-cible ma-branche-a-fusionner
+
+Passez à une branche spécifique, fusionnez une autre branche, supprimez la branche fusionnée localement et la supprimez à distance :
+
+
+    ./gitbranch.sh chckmdr ma-branche-cible ma-branche-a-fusionner
 
 N'oubliez pas de donner les autorisations d'exécution au script avant de l'utiliser :
 
-
-
-    chmod +x gitbranch.sh
+     chmod +x gitbranch.sh
+     
 Vous pouvez aussi crée un allias afin de simplifier encore plus la commande ( voir les readme de pérécdent script pour connaitre la procédure )
