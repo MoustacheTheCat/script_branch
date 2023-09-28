@@ -13,20 +13,20 @@ function gitbranch() {
         fi
     else
         if [[ "$option" == "cc" ]]; then
-            git branch "$nameone" && git checkout "$nameone"
-        elif [[ "$option" == "d" ]]; then
+             git checkout -b "$nameone"
+        elif [[ "$option" == "del" ]]; then
             git branch -d "$nameone"
-        elif [[ "$option" == "dr" ]]; then
+        elif [[ "$option" == "der" ]]; then
             git push origin --delete "$nameone"
-        elif [[ "$option" == "chck" ]]; then
+        elif [[ "$option" == "chk" ]]; then
             git checkout "$nameone"
         elif [[ "$option" == "m" ]]; then
             git merge "$nameone"
-        elif [[ "$option" == "chckm" ]]; then
+        elif [[ "$option" == "chkm" ]]; then
             git checkout "$nameone" && git merge "$nametwo"
-        elif [[ "$option" == "chckmd" ]]; then
+        elif [[ "$option" == "chckmdel" ]]; then
             git checkout "$nameone" && git merge "$nametwo" && git branch -d "$nametwo"
-        elif [[ "$option" == "chckmdr" ]]; then
+        elif [[ "$option" == "chckmdelder" ]]; then
             git checkout "$nameone" && git merge "$nametwo" && git branch -d "$nametwo" && git push origin --delete "$nametwo"
         fi
     fi
