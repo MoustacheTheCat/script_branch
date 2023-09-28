@@ -16,13 +16,13 @@ Pour utiliser ce script, exécutez-le depuis votre terminal avec les arguments a
 Options prises en charge
 
     cc : Crée une nouvelle branche et passe automatiquement en mode de branchement.
-    d : Supprime une branche locale.
-    dr : Supprime une branche à la fois localement et à distance.
-    chck : Passe à une branche spécifiée.
+    del : Supprime une branche locale.
+    der : Supprime une branche à la fois localement et à distance.
+    chk : Passe à une branche spécifiée.
     m : Fusionne une branche spécifiée dans la branche actuelle.
-    chckm : Passe à une branche spécifiée et fusionne une autre branche.
-    chckmd : Passe à une branche spécifiée, fusionne une autre branche, puis supprime la branche fusionnée localement.
-    chckmdr : Passe à une branche spécifiée, fusionne une autre branche, supprime la branche fusionnée localement et la supprime à distance.
+    chkm : Passe à une branche spécifiée et fusionne une autre branche.
+    chckmdel : Passe à une branche spécifiée, fusionne une autre branche, puis supprime la branche fusionnée localement.
+    chckmdelder : Passe à une branche spécifiée, fusionne une autre branche, supprime la branche fusionnée localement et la supprime à distance.
 
 Exemples d'utilisation
 
@@ -33,17 +33,17 @@ Créez et basculez automatiquement vers une nouvelle branche :
 
 Supprimez une branche locale :
 
-    ./gitbranch.sh d ma-branche-a-supprimer
+    ./gitbranch.sh del ma-branche-a-supprimer
 
 Supprimez une branche locale et distante :
 
 
-    ./gitbranch.sh dr ma-branche-a-supprimer
+    ./gitbranch.sh der ma-branche-a-supprimer
 
 Passez à une branche spécifique :
 
 
-    ./gitbranch.sh chck ma-branche-cible
+    ./gitbranch.sh chk ma-branche-cible
 
 Fusionnez une branche dans la branche actuelle :
 
@@ -53,17 +53,17 @@ Fusionnez une branche dans la branche actuelle :
 Passez à une branche spécifique, puis fusionnez une autre branche :
 
 
-    ./gitbranch.sh chckm ma-branche-cible ma-branche-a-fusionner
+    ./gitbranch.sh chkm ma-branche-cible ma-branche-a-fusionner
 
 Passez à une branche spécifique, fusionnez une autre branche, puis supprimez la branche fusionnée localement :
 
 
-    ./gitbranch.sh chckmd ma-branche-cible ma-branche-a-fusionner
+    ./gitbranch.sh chkmdel ma-branche-cible ma-branche-a-fusionner
 
 Passez à une branche spécifique, fusionnez une autre branche, supprimez la branche fusionnée localement et la supprimez à distance :
 
 
-    ./gitbranch.sh chckmdr ma-branche-cible ma-branche-a-fusionner
+    ./gitbranch.sh chkmdelder ma-branche-cible ma-branche-a-fusionner
 
 N'oubliez pas de donner les autorisations d'exécution au script avant de l'utiliser :
 
